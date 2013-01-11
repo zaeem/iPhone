@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'MSSNGRUnitTests' target in the 'MSSNGRUnitTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

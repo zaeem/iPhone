@@ -1,0 +1,29 @@
+//
+// Prefix header for all source files of the 'MSSNGR' target in the 'MSSNGR' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef STAGING
+
+#define BASE_URL	@"http://staging-api.mssngr-app.com"
+#define api_key     @"3arDMwn8"
+
+#else
+
+#define BASE_URL	@"https://mssngr-api.promptus.info"
+#define api_key     @"39bf79B8cC4AEa2ac2"
+
+#endif
+
+//#define BASE_URL	@"http://localhost:9292"
+//#define api_key     @"ABC"
